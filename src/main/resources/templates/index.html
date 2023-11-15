@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.5em; /* Mărimea textului este acum de 1,5 ori mai mare */
+        }
+
+        h1, p {
+            color: inherit; /* Utilizează culoarea din .container pentru h1 și p */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p th:text="${message}"></p>
+    </div>
+</body>
+</html>
